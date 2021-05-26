@@ -1,0 +1,41 @@
+version: '2'
+
+services:
+  jenkins:
+    image: mlucken/jenkins-arm
+    container_name: docker-jenkins
+    privileged: true
+    ports:
+      - '8080:8080'
+    volumes:
+      - ~/jenkins:/var/jenkins_home
+      - /Users/talhaim/devops-project:/var/jenkins_home/devops-project
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker
+    environment:
+      JENKINS_HOST_HOME: "/Users/talhaim/Desktop/jenkins_home"
+    networks:
+      my-network:
+        ipv4_address: 10.5.0.5
+        
+      
+
+  tomcat:
+    container_name: doc-tomcat
+    image: tomcat:jdk8-openjdk-slim
+    volumes:
+      - ~/devops-project:/usr/local/tomcat/webapps/app
+    ports:
+      - '8082:8080'
+    networks:
+      my-network:
+        ipv4_address: 10.5.0.6
+      
+
+networks:
+  my-network:
+    driver: bridge
+    ipam:
+     config:
+      - subnet: 10.5.0.0/16
+      
