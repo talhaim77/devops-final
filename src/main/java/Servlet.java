@@ -1,5 +1,3 @@
-import yahoofinance.Stock;
-import yahoofinance.YahooFinance;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
