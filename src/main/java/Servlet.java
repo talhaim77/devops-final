@@ -15,10 +15,7 @@ public class Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-        Stock stock = YahooFinance.get("INTC");
-//        Stock stock = YahooFinance.get("INTC");
-//        double price = stock.getQuote(true).getPrice().doubleValue();
-        double price = 9.051;
+        double price = 50.03;
         try (PrintWriter writer = response.getWriter()) {
             writer.println("<!DOCTYPE html><html>");
             writer.println("<head>");
@@ -26,8 +23,7 @@ public class Servlet extends HttpServlet {
             writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
             writer.println("</head>");
             writer.println("<body>");
-            writer.println("----yossi-----");
-            String intc = "<h1>INTEL Price:" + Double.toString(price) + "</h1>";
+            String intc = "<h1>INTEL Price:" + price + "</h1>";
             writer.println(intc);
             writer.println("</body>");
             writer.println("</html>");
