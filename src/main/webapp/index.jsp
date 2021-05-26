@@ -8,7 +8,7 @@
         == null) { %>
 
     <H2>User Info Request Form</H2>
-    <FORM METHOD="GET" ACTION="/Users/talhaim/devops-project/src/main/webapp/index.jsp">
+    <FORM METHOD="GET" ACTION="<%request.getContextPath()%>
         <P>
             Your name: <input type="text" name=
                 "name" size=26>
