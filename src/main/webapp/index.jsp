@@ -5,6 +5,6 @@
 </head>
 <body>
 <h1>Hello, welcome to Tal and Nadav Best App !!</h1>
-<p>To invoke the java servlet click <a href="Servlet">here</a></p>
+<p>To invoke the java servlet click <a href="MyServlet">here</a></p>
 </body>
 </html>
