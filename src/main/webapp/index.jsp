@@ -6,7 +6,7 @@
 <% if (request.getParameter("name")==
         null && request.getParameter("email")
         == null) { %>
-<CENTER>
+
     <H2>User Info Request Form</H2>
     <FORM METHOD="GET" ACTION="/Users/talhaim/devops-project/src/main/webapp/index.jsp">
         <P>
@@ -18,7 +18,7 @@
         <P>
             <input type="submit" value="Process">
     </FORM>
-</CENTER>
+
 <% } else { %>
 <%! String name, email; %>
 <%
