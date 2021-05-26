@@ -23,12 +23,6 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/de.sfuhrm/YahooFinanceAPI -->
-        <dependency>
-            <groupId>de.sfuhrm</groupId>
-            <artifactId>YahooFinanceAPI</artifactId>
-            <version>3.16.2</version>
-        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
