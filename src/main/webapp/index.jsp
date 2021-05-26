@@ -10,7 +10,7 @@
 <head>
     <title> tal and nadav </title>
 </head>
-<body>
+<body BGCOLOR="#ffffcc">
 <h1> simpale test</h1>
     <form name="myForm" action="results.jsp" method="post">
 
