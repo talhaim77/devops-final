@@ -2,7 +2,7 @@
 <HEAD>
     <TITLE>Form Example</TITLE>
 </HEAD>
-<BODY BGCOLOR="#ffffcc">
+<BODY BGCOLOR="#87CEFA">
 <% if (request.getParameter("name")==
         null && request.getParameter("email")
         == null) { %>
