@@ -1,36 +1,46 @@
-<HTML>
-<HEAD>
-    <TITLE>Form Example</TITLE>
-</HEAD>
-<BODY BGCOLOR="#87CEFA">
-<% if (request.getParameter("name")==
-        null && request.getParameter("email")
-        == null) { %>
+<%--
+  Created by IntelliJ IDEA.
+  User: talhaim
+  Date: 26/05/2021
+  Time: 19:34
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title> tal and nadav </title>
+</head>
+<body>
+<h1> simpale test</h1>
+    <form name="myForm" action="results.jsp" method="post">
 
-    <H2>User Info Request Form</H2>
-    <FORM METHOD="GET" ACTION="<%request.getContextPath()%>
-        <P>
-            Your name: <input type="text" name=
-                "name" size=26>
-        <P>
-            Your email: <input type="text" name=
-                "email" size=26>
-        <P>
-            <input type="submit" value="Process">
-    </FORM>
+        <table>
+            <tbody>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first" value="" size="50"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last" value="" size="50"></td>
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td><input type="text" name="email" value="" size="50"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-<% } else { %>
-<%! String name, email; %>
-<%
-    name = request.getParameter("name");
-    email = request.getParameter("email");
-%>
-<P>
-    <B>You have provided the following
-        info</B>:
-<P>
-    <B>Name</B>: <%= name %><P>
-    <B>Email</B>: <%= email %>
-        <% } %>
-</BODY>
-</HTML>
+
+    </form>
+</body>
+</html>
