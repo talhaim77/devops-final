@@ -31,14 +31,29 @@
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <select name="gender">
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
+                    <input type="radio" name="gender" value="Male"/>Male
+                    <input type="radio" name="gender" value="Female"/>Female
                 </td>
+            </tr>
+            <tr>
+                <td>Which course do you like the most?</td>
+                <td>
+                    <select name="course">
+                        <option value=" "> choose a course</option>
+                        <option value="OOP">Object oriented</option>
+                        <option value="DEV"> DEVOPS</option>
+                        <option value="NON"> Other</option>
+
+                    </select>
+
+                </td>
+
             </tr>
             </tbody>
         </table>
+
+        <input type="reset" value="Clear" name="clear"/>
+        <input type="submit" value="Submit" name="submit"/>
 
 
     </form>
