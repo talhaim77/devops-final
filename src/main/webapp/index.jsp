@@ -6,12 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import = "java.io.*,java.util.*" %>
+<%@ page import = "javax.servlet.*,java.text.*" %>
+
 <html>
 <head>
-    <title> tal and nadav </title>
+    <title> Hello Devops </title>
 </head>
 <body BGCOLOR="#ffffcc">
-<h1> simpale test</h1>
+<h1> Welcome to Tal and Nadav website! </h1>
     <form name="myForm" action="results.jsp" method="post">
 
         <table>
