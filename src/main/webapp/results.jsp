@@ -4,7 +4,6 @@
   Date: 26/05/2021
   Time: 19:57
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import = "java.io.*,java.util.*" %>
 <%@ page import = "javax.servlet.*,java.text.*" %>
 <html>
