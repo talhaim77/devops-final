@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title> Hello Devops </title>
+    <title> Hello Devops !!! </title>
 </head>
 <body BGCOLOR="#ffffcc">
 <h1> Welcome to Tal and Nadav website! </h1>
